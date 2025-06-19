@@ -10,7 +10,7 @@ import { FaTools } from "react-icons/fa";
 import { VscVscodeInsiders } from "react-icons/vsc";
 import ProjectCard from './ProjectCard'
 import FloatingOrb from './FloatingOrb'
-
+import {MapPin} from 'lucide-react'
 
 const Index = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -184,7 +184,7 @@ const Index = () => {
 
     return (
         <div className='min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden'>
-            <ParticleBackground />
+            <ParticleBackground  />
             <FloatingOrb size="large" color="cyan" className="top-1/4 left-1/4" delay={0} />
             <FloatingOrb size="medium" color="purple" className="top-1/3 right-1/4" delay={2} />
             <FloatingOrb size="small" color="pink" className="bottom-1/4 left-1/3" delay={4} />
@@ -230,7 +230,7 @@ const Index = () => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1 }}
+                        transition={{ duration: 0.1 }}
                         className="mb-8"
                     >
                         <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
@@ -247,7 +247,7 @@ const Index = () => {
                         className="text-2xl md:text-3xl mb-8 text-gray-300"
                     >
                         <AnimatedText
-                            text="Full-Stack Developer & AI Enthusiast"
+                            text="Full-Stack Developer"
                             className="text-[#00ffff] font-light"
                             delay={1000}
                         />
@@ -257,8 +257,9 @@ const Index = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1, duration: 0.8 }}
-                        className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
+                        className="sm:text-xl text-[15px] text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
                     >
+                        <div className='flex justify-center items-center'><MapPin />Pakistan</div>
                         Crafting innovative digital experiences with cutting-edge technologies.
                         Passionate about creating scalable solutions that push the boundaries of what's possible.
                     </motion.p>

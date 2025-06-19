@@ -28,7 +28,7 @@ const AnimatedText = ({ text, className, delay }) => {
                 setCurrentIndex((pre) => pre + 1)
             }
 
-        }, 100);
+        }, 70);
         return () => {
             clearTimeout(timer)
         }

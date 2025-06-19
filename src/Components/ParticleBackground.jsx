@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 
-const ParticleBackground = () => {
+const ParticleBackground = ({}) => {
     const canvasRef = useRef(null);
+    let ParticleCount = 0;
 
 
     useEffect(() => {
@@ -16,6 +17,15 @@ const ParticleBackground = () => {
         const resizeCanvas = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
+            if(window.innerWidth <= 640){
+                ParticleCount = 30;
+            }else if(window.innerWidth <= 768){
+                ParticleCount = 60
+            }
+            else{
+                ParticleCount = 100
+            }
+            
         }
 
         resizeCanvas();
@@ -39,7 +49,7 @@ const ParticleBackground = () => {
 
         }
 
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < ParticleCount; i++) {
             Particles.push(createParticle());
         }
 
@@ -86,8 +96,8 @@ const ParticleBackground = () => {
 
                     const distance = Math.sqrt(dx * dx + dy * dy);
 
-                    if (distance < 100) {
-                        const opacity = (1 - distance / 100) * 0.2;
+                    if (distance < ParticleCount) {
+                        const opacity = (1 - distance / ParticleCount) * 0.2;
                         ctx.strokeStyle = `rgba(0, 255, 255, ${opacity})`;
                         ctx.lineWidth = 0.5;
                         ctx.beginPath();
