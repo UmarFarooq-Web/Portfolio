@@ -15,7 +15,7 @@ const SkillCard = ({ name, level, icon, description, index }) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className={`glass-effect p-6 rounded-lg neon-border  hover:shadow-[0_0_30px_rgba(0,255,255,0.3)] transition-all duration-300 transform hover:-translate-y-2`}>
+            <div className={`glass-effect sm:p-6 p-4 rounded-lg neon-border  hover:shadow-[0_0_30px_rgba(0,255,255,0.3)] transition-all duration-300 transform hover:-translate-y-2`}>
                 <div className="flex items-center mb-4">
                     <div className="text-[#00ffff] text-2xl mr-3 group-hover:animate-pulse">
                         {icon}

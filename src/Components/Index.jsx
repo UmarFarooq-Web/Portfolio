@@ -9,6 +9,7 @@ import { SiJavascript, SiMongodb, SiExpress, SiTailwindcss, SiPostman } from "re
 import { FaTools } from "react-icons/fa";
 import { VscVscodeInsiders } from "react-icons/vsc";
 import ProjectCard from './ProjectCard'
+import FloatingOrb from './FloatingOrb'
 
 
 const Index = () => {
@@ -184,6 +185,10 @@ const Index = () => {
     return (
         <div className='min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden'>
             <ParticleBackground />
+            <FloatingOrb size="large" color="cyan" className="top-1/4 left-1/4" delay={0} />
+            <FloatingOrb size="medium" color="purple" className="top-1/3 right-1/4" delay={2} />
+            <FloatingOrb size="small" color="pink" className="bottom-1/4 left-1/3" delay={4} />
+            <FloatingOrb size="medium" color="cyan" className="bottom-1/3 right-1/3" delay={1} />
 
             {/* Navigation */}
             <div className='fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/10'>
@@ -220,7 +225,7 @@ const Index = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="min-h-screen flex items-center justify-center relative" style={{ transform: `translateY(${scrollY * 0.1}px)` }}>
+            <section className="min-h-screen mt-22 sm:mt-0 flex items-center justify-center relative" style={{ transform: `translateY(${scrollY * 0.1}px)` }}>
                 <div className="text-center z-10 max-w-4xl mx-auto px-6">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -296,7 +301,7 @@ const Index = () => {
             </section>
 
             {/* About Section */}
-            <section id="about" className="py-20 relative">
+            <section id="about" className="sm:pb-20 pb-5 pt-24 sm:py-20 relative">
                 <div className="max-w-7xl mx-auto px-6">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
@@ -316,13 +321,13 @@ const Index = () => {
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                         >
-                            <div className="glass-effect p-8 rounded-lg neon-border">
-                                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                                  Hey, I'm Umar — a <span className='text-gradient'> Undergraduate student</span> with a passion for creating meaningful and functional digital experiences. I'm currently pursuing my <span className='text-gradient'>Bachelor's in Computer Science</span> at <span className='text-gradient'>University Of Engineering and Technology</span>, where I maintain a <span className='text-gradient'> CGPA of 3.75.</span> My journey into tech started out of curiosity, but it quickly became a way for me to express creativity, solve real-world problems, and build a better future.
+                            <div className="glass-effect sm:p-8 p-4 rounded-lg neon-border">
+                                <p className="sm:text-lg text-[15px] text-gray-300 leading-relaxed mb-6">
+                                    Hey, I'm Umar — a <span className='text-gradient'> Undergraduate student</span> with a passion for creating meaningful and functional digital experiences. I'm currently pursuing my <span className='text-gradient'>Bachelor's in Computer Science</span> at <span className='text-gradient'>University Of Engineering and Technology</span>, where I maintain a <span className='text-gradient'> CGPA of 3.75.</span> My journey into tech started out of curiosity, but it quickly became a way for me to express creativity, solve real-world problems, and build a better future.
 
 
                                 </p>
-                                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                                <p className="sm:text-lg text-[15px] text-gray-300 leading-relaxed mb-6">
                                     I'm constantly learning and applying new ideas — not just in the classroom, but through personal projects that challenge and grow my skills. I believe in consistency, self-improvement, and staying hungry to learn — whether I’m debugging a stubborn issue or simply chasing the next personal milestone.
                                 </p>
                                 <div className="flex gap-4">
@@ -382,7 +387,7 @@ const Index = () => {
             </section>
 
             {/* Skills Section */}
-            <section id="skills" className="py-20 relative">
+            <section id="skills" className="sm:py-20 py-5 relative">
                 <div className="max-w-7xl mx-auto px-6">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
