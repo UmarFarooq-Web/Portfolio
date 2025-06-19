@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import ParticleBackground from './Components/ParticleBackground'
+import ParticleBackground from './ParticleBackground'
 import { animate, motion } from 'framer-motion'
-import AnimatedText from './Components/AnimatedText'
+import AnimatedText from './AnimatedText'
 import { Download, ChevronDown, Github, Linkedin, Mail, Code2, Database, Globe, Smartphone, Brain, Zap } from "lucide-react"
-import SkillCard from './Components/SkillCard'
+import SkillCard from './SkillCard'
 import { FaReact, FaNodeJs, FaHtml5, FaGitAlt, FaRocket } from "react-icons/fa";
 import { SiJavascript, SiMongodb, SiExpress, SiTailwindcss, SiPostman } from "react-icons/si";
 import { FaTools } from "react-icons/fa";
 import { VscVscodeInsiders } from "react-icons/vsc";
-import ProjectCard from './Components/ProjectCard'
+import ProjectCard from './ProjectCard'
 
 
 const Index = () => {
