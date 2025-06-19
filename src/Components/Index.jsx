@@ -438,7 +438,7 @@ const Index = () => {
                         viewport={{ once: true }}
                         className="mb-16"
                     >
-                        <h2 className="text-5xl font-bold mb-6 text-gradient">Let's Work Together</h2>
+                        <h2 className="text-5xl font-bold mb-6 py-2 text-gradient">Let's Work Together</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-[#00ffff] to-[#bf00ff] mx-auto rounded-full mb-8" />
                         <p className="text-xl text-gray-300 mb-12">
                             Ready to bring your ideas to life? Let's create something amazing together.
