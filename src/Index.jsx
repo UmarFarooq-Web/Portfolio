@@ -363,7 +363,7 @@ const Index = () => {
                             viewport={{ once: true }}
                             className="relative"
                         >
-                            <div className="aspect-square glass-effect rounded-lg neon-border p-8 flex items-center justify-center hidden md:flex">
+                            <div className="aspect-square glass-effect rounded-lg neon-border p-8 items-center justify-center hidden md:flex">
                                 <div className="text-center">
                                     <motion.div
                                         className="w-32 h-32 bg-gradient-to-br from-[#00ffff]/30 to-[#bf00ff]/30 rounded-full mx-auto mb-6 flex items-center justify-center text-6xl text-[#00ffff]"
