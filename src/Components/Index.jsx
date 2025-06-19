@@ -206,7 +206,7 @@ const Index = () => {
                         animate={{ opacity: 1, x: 0 }}
                         className="hidden md:flex space-x-8"
                     >
-                        {['About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
+                        {['Home','About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
                             <motion.a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}
@@ -225,7 +225,7 @@ const Index = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="min-h-screen mt-22 sm:mt-0 flex items-center justify-center relative" style={{ transform: `translateY(${scrollY * 0.1}px)` }}>
+            <section id='home' className="min-h-screen mt-22 sm:mt-0 flex items-center justify-center relative" style={{ transform: `translateY(${scrollY * 0.1}px)` }}>
                 <div className="text-center z-10 max-w-4xl mx-auto px-6">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
