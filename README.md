@@ -1,12 +1,50 @@
-# React + Vite
+# 🌟 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my **personal developer portfolio** built with **React.js**.  
+It showcases my skills, projects, and contact info in a clean, modern layout — with glowing UI elements, smooth animations, and an interactive **particle background** built using the `<canvas>` element.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Live Demo
 
-## Expanding the ESLint configuration
+> 🔗 [View Portfolio](https://umarfarooq-dev-portfolio.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+--
+
+---
+
+## ⚙️ Tech Stack
+
+| Frontend | Styling | Effects & Animation |
+|----------|----------|----------------------|
+| React.js | Tailwind CSS | Custom Canvas, Framer Motion, Glow Effects |
+
+---
+
+## ✨ Features
+
+- 🎆 **Canvas Particle Background** for a dynamic hero section
+- 💡 **Glowing buttons and borders** for a futuristic feel
+- ✨ **Smooth scroll animations** using Framer Motion
+- 🧩 Responsive layout for all screen sizes
+- 📨 Working contact form (optional with EmailJS or similar)
+
+---
+
+## 🔍 What I Learned
+
+- How to integrate **canvas rendering** inside a React component
+- Creating **custom particle animations** with JavaScript
+- Building a clean and modern **UI with glowing elements**
+- Leveraging **Framer Motion** for engaging scroll and hover animations
+- Making a portfolio that reflects **personality and creativity**
+
+---
+
+## 📦 Setup Instructions
+
+```bash
+git clone https://github.com/UmarFarooq-Web/Portfolio
+cd portfolio-react
+npm install
+npm run dev
